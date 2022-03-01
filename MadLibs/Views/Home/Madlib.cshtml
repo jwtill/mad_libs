@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Madlib</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+@{
+  var b = Model.Noun2[0];
+  var prefix = (b == 'a' || b == 'e' || b == 'i' || b == 'o' || b == 'u') ? "an" : "a";
+}
+
+    <p>
+    Australia, also known as the @Model.Noun Down Under is famous for its 
+    @Model.Adjective wildlife. The most famous animal is the kangaroo, which
+    carries its baby in @prefix 
+    @Model.Noun2 on its belly and travels by hopping
+    on its powerful hind 
+    @Model.BodyParts.
+    </p>
+    
+</body>
+</html>
+
